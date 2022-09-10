@@ -1859,7 +1859,7 @@ if shared.VapeIndependent then
 else
     if game.PlaceId = 6872274481 then
         loadstring(GetScript("main.lua"))()
-        if betterisfile("vape/6872274481.lua") then
+        if betterisfile("vape/6872274481.lua"))() then
             loadstring(readfile("vape/6872274481.lua"))()
     end
 	loadstring(GetURL("AnyGame.lua"))()
