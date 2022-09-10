@@ -3,7 +3,7 @@ local injected = true
 local oldrainbow = false
 local customdir = (shared.VapePrivate and "vapeprivate/" or "vape/")
 local betterisfile = function(file)
-	local suc, res = pcall(function() return readfile(file) end)
+	local suc, res = pcall(function()      return readfile(file) end)
 	return suc and res ~= nil
 end
 local function GetScript(scripturl)
@@ -1857,11 +1857,6 @@ if shared.VapeIndependent then
 	shared.VapeFullyLoaded = true
 	return GuiLibrary
 else
-    if game.PlaceId = 6872274481 then
-        loadstring(GetScript("main.lua"))()
-        if betterisfile("vape/6872274481.lua"))() then
-            loadstring(readfile("vape/6872274481.lua"))()
-    end
 	loadstring(GetURL("AnyGame.lua"))()
 	if betterisfile("vape/"..game.PlaceId..".lua") then
 		loadstring(readfile("vape/"..game.PlaceId..".lua"))()
